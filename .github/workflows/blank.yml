@@ -34,3 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Setup Connection to JFRog
+        uses: @actions/setup-jfrog-cli
+          with:
+            JF_ACCESS_TOKEN=foo
